@@ -1,12 +1,10 @@
-from tkinter import Tk
-from tkinter import Entry
-from tkinter import Button
-from tkinter import Label
-from tkinter import END
+from tkinter import Tk, Entry, Button, Label, END
 
 w = Tk()
 w.resizable (False, False)
 w.title ("Hexadecimal translator")
+i = PhotoImage (file="icon.png")
+w.iconphoto  (False, i)
 
 def butt():
     hec.config (state = "normal")
