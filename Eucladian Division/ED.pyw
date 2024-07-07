@@ -1,15 +1,11 @@
-from tkinter import Tk
-from tkinter import Entry
-from tkinter import Button
-from tkinter import Canvas
-from tkinter import Label
-
-
+from tkinter import Tk, Entry, Button, Canvas, Label
 
 w= Tk()
 w.title ("Euclidean Division")
 w.geometry ("300x500")
 w.resizable (False,False)
+i = PhotoImage (file="icon.png")
+w.iconphoto  (False, i)
 
 def eq(e):
     re= inp.get()
