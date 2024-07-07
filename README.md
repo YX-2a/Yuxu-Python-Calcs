@@ -1,6 +1,6 @@
-# Arch-Python-Projects
+# 6x7-Python-Calcs
 
-This Repo Has All Python Projects I Have Done On Arch Linux.
+This Repo Has Most of My Calculator Projects Including Converters.
 
 Made This For Easy Storage.
 
