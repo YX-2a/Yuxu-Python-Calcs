@@ -1,10 +1,5 @@
 #imports
-from tkinter import Tk
-from tkinter import Canvas
-from tkinter import Label
-from tkinter import Entry
-from tkinter import Button
-from tkinter import PhotoImage
+from tkinter import Tk, Canvas, Label, Entry, Button, PhotoImage
 from random import randrange
 
 #winconf
@@ -12,8 +7,8 @@ w = Tk()
 w.title ("Linear Function Drawer")
 w.geometry ("700x650")
 w.resizable (False, False)
-icon = PhotoImage (file="C:\\Users\\lenovo\\Desktop\\yahia\\16 bits.png")
-w.iconphoto (False , icon)
+i = PhotoImage (file="icon.png")
+w.iconphoto (False , i)
 
 #functions
 def makeline ():
