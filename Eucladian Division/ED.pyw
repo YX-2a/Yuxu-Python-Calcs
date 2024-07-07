@@ -1,4 +1,4 @@
-from tkinter import Tk, Entry, Button, Canvas, Label
+from tkinter import Tk, Entry, Button, Canvas, Label, PhotoImage
 
 w= Tk()
 w.title ("Euclidean Division")
