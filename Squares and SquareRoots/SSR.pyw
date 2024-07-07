@@ -1,4 +1,4 @@
-from tkinter import Tk, Button, PhotoImage, Entry, Label, Canvas
+from tkinter import Tk, Button, PhotoImage, Entry, Label, Canvas, PhotoImage
 
 ##The Window Configuration##
 
