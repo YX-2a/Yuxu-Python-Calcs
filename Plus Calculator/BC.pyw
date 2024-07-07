@@ -1,11 +1,12 @@
 from tkinter import Tk, PhotoImage, Entry, Button, END
 
-w = Tk(bg="black")
+w = Tk()
 w.geometry ("500x500")
 w.resizable (False, False)
 w.title('Balculator')
 i = PhotoImage (file="icon.png")
 w.iconphoto  (False, i)
+w.config (bg="black")
 
 e = Entry(w, bd=6, font=700, fg="#00ff1f", bg="gray", width=54)
 
