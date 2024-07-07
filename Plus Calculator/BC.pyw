@@ -1,16 +1,11 @@
-from tkinter import Tk
-from tkinter import PhotoImage
-from tkinter import Entry
-from tkinter import Button
-from tkinter import END
+from tkinter import Tk, PhotoImage, Entry, Button, END
 
-w = Tk()
+w = Tk(bg="black")
 w.geometry ("500x500")
 w.resizable (False, False)
 w.title('Balculator')
-i = PhotoImage (file="C:\\Users\\lenovo\\Desktop\\yahia\\icon.png")
+i = PhotoImage (file="icon.png")
 w.iconphoto  (False, i)
-w.configure (bg="black")
 
 e = Entry(w, bd=6, font=700, fg="#00ff1f", bg="gray", width=54)
 
