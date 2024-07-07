@@ -1,4 +1,4 @@
-from tkinter import Tk, Entry, Button, Label, END
+from tkinter import Tk, Entry, Button, Label, PhotoImage, END
 
 w = Tk()
 w.resizable (False, False)
