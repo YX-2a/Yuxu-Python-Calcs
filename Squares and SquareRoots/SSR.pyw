@@ -1,9 +1,4 @@
-from tkinter import Tk
-from tkinter import Button
-from tkinter import PhotoImage
-from tkinter import Entry
-from tkinter import Label
-from tkinter import Canvas
+from tkinter import Tk, Button, PhotoImage, Entry, Label, Canvas
 
 ##The Window Configuration##
 
@@ -11,8 +6,12 @@ w= Tk()
 w.title ("Squarin' 'n Rootin' ")
 w.geometry ("300x200")
 w.resizable (False, False)
-puic = PhotoImage (file="C:\\Users\\Lenovo\\yahia 2\\afokinpic.png")
-w.iconphoto (False , puic)
+i = PhotoImage (file="icon.png")
+w.iconphoto (False , i)
+
+##important vars
+psqrt = PhotoImage (file="sqrt.png")
+psq = PhotoImage (file="sq.png")
 
 ##The Functions##
 
@@ -37,9 +36,6 @@ ip.place(x=50,y=50)
 
 lbip = Label (can, text= "=",fg="#ffaaff",bg="red", font= "bold")
 lbip.place (x=45,y=75)
-
-psqrt = PhotoImage (file="C:\\Users\\Lenovo\\yahia 2\\sqrt.png")
-psq = PhotoImage (file="C:\\Users\\Lenovo\\yahia 2\\sq.png")
 
 btnip = Button (can, image = psqrt, command=sqrt)
 btnip.place (x=10,y=50)
