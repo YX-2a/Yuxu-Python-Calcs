@@ -1,20 +1,12 @@
-from tkinter import Tk
-from tkinter import Canvas
-from tkinter import Label
-from tkinter import Entry
-from tkinter import Button
-from tkinter import NORMAL
-from tkinter import DISABLED
-from tkinter import END
-from tkinter import PhotoImage
+from tkinter import Tk, Canvas, Label, Entry, Button, NORMAL, DISABLED, END, PhotoImage
 
 w = Tk()
 w.geometry ("300x500")
 w.title('ACalcX')
 w.resizable(False, False)
-i = PhotoImage (file="C:\\Users\\lenovo\\Desktop\\yahia\\icon1.png")
+i = PhotoImage (file="icon.png")
 w.iconphoto  (False, i)
-bge = PhotoImage (file="C:\\Users\\lenovo\\Desktop\\yahia\\20.png")
+bge = PhotoImage (file="bg.png")
 
 c = Canvas (w, height=500, width=300)
 c.create_image(149,250,image = bge)
