@@ -11,6 +11,7 @@ w.config (bg="black")
 e = Entry(w, bd=6, font=700, fg="#00ff1f", bg="gray", width=54)
 
 def numad(number):
+    global current
     current = e.get()
     e.delete( 0, END)
     e.insert( 0, str(current) + str(number))
@@ -19,15 +20,14 @@ def clearscreen():
     e.delete(0, END)
 
 def plu():
-    f_n = e.get()
-    global first_num
-    first_num = int(f_n)
-    e.delete(0, END)
-
+    global nums
+    nums = []
+    nums.append (current)
+    
 def eql():
-    s_n = e.get()
+    res = eval ("+".join (nums))
     e.delete (0, END)
-    e.insert(0, first_num + int(s_n))
+    e.insert(0, res)
 
     
 on=Button(w, text="1",height=5,width=10
