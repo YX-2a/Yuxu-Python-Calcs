@@ -5,7 +5,6 @@ from random import randrange
 #winconf
 w = Tk()
 w.title ("Linear Function Drawer")
-w.geometry ("700x650")
 w.resizable (False, False)
 i = PhotoImage (file="icon.png")
 w.iconphoto (False , i)
@@ -33,11 +32,8 @@ lab1.pack(anchor = "nw")
 can = Canvas (w, height = 400, width =650 , bg="#000000")
 can.pack (anchor = "n")
 
-lab = Label (w, text = "0")
+lab = Label (w, text = "0" + " "*222 + "650")
 lab.pack(anchor = "sw")
-
-lab2 = Label (w, text = "650")
-lab2.pack(anchor = "e")
 
 lab3 = Label (w, text = "x axis :")
 lab3.pack(anchor = "w")
