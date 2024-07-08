@@ -1,8 +1,5 @@
 #imports
-from tkinter import Tk
-from tkinter import Entry
-from tkinter import Label
-from tkinter import Button
+from tkinter import Tk, Entry, Label, Button
 from gcd import GCD
 
 #other funcs
