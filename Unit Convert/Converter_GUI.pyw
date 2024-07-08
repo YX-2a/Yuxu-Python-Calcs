@@ -4,7 +4,7 @@ from UConv import cmin, mft, kmmi
 
 #winconf
 w = Tk ()
-w.title ("GUI Converter")
+w.title ("GUI Unit Converter")
 w.geometry ("250x80")
 w.resizable (0,0)
 menu = Menu ()
