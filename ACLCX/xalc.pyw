@@ -9,7 +9,7 @@ w.iconphoto  (False, i)
 bge = PhotoImage (file="bg.png")
 
 c = Canvas (w, height=500, width=300)
-c.create_image(149,250,image = bge)
+c.create_image(0,0,image = bge, anchor = "nw")
 c.grid(row=0,column=0,columnspan=100,rowspan=100)
 def plusi():
     n1= inp.get()
