@@ -3,28 +3,31 @@ from tkinter import Tk, PhotoImage, Entry, Button, END
 w = Tk()
 w.geometry ("500x500")
 w.resizable (False, False)
-w.title('Balculator')
+w.title('Plus Calculator')
 i = PhotoImage (file="icon.png")
 w.iconphoto  (False, i)
 w.config (bg="black")
 
 e = Entry(w, bd=6, font=700, fg="#00ff1f", bg="gray", width=54)
+nums = []
 
 def numad(number):
-    global current
+    global var
     current = e.get()
     e.delete( 0, END)
-    e.insert( 0, str(current) + str(number))
+    var = str(current) + str(number)
+    e.insert( 0, var)
 
 def clearscreen():
     e.delete(0, END)
+    nums.clear ()
 
 def plu():
-    global nums
-    nums = []
-    nums.append (current)
+    e.delete(0, END)
+    nums.append (var)
     
 def eql():
+    nums.append (var)
     res = eval ("+".join (nums))
     e.delete (0, END)
     e.insert(0, res)
