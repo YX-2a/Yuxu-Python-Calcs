@@ -1,8 +1,5 @@
 #imports
-from tkinter import Tk
-from tkinter import Button
-from tkinter import Label
-from tkinter import Entry
+from tkinter import Tk, Button, Label, Entry
 from random import randrange
 
 #window conf
