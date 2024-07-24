@@ -1,5 +1,5 @@
 #imports
-from tkinter import Tk, Frame, Menu, Entry, Label
+from tkinter import Tk, Frame, Menu, Entry, Label, PhotoImage
 from UConv import cmin, mft, kmmi
 
 #winconf
@@ -7,6 +7,8 @@ w = Tk ()
 w.title ("GUI Unit Converter")
 w.geometry ("250x80")
 w.resizable (0,0)
+i = PhotoImage (file="icon.png")
+w.iconphoto  (False, i)
 menu = Menu ()
 w.config (menu = menu)
 

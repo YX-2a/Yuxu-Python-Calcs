@@ -1,11 +1,13 @@
 #imports
-from tkinter import Tk, Button, Label, Entry
+from tkinter import Tk, Button, Label, Entry, PhotoImage
 from random import randrange
 
 #window conf
 w = Tk ()
 w.title ("Random Number Generator")
 w.geometry ("350x150")
+i = PhotoImage (file="icon.png")
+w.iconphoto  (False, i)
 w.resizable (0,0)
 
 #function

@@ -1,4 +1,4 @@
-from tkinter import Tk, Label, Entry, Button, Frame
+from tkinter import Tk, Label, Entry, Button, Frame, PhotoImage
 from time import sleep
 
 def count ():
@@ -24,6 +24,8 @@ def main ():
 	global ent, ent2, lb3, w
 	w = Tk ()
 	w.title ("Counter GUI")
+	i = PhotoImage (file="icon.png")
+	w.iconphoto  (False, i)
 	w.resizable (0,0)
 	
 	frm = Frame (w)

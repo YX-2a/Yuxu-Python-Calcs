@@ -1,5 +1,5 @@
 #imports
-from tkinter import Tk, Entry, Label, Button
+from tkinter import Tk, Entry, Label, Button, PhotoImage
 from gcd import GCD
 
 #other funcs
@@ -17,6 +17,8 @@ def main ():
     w = Tk ()
     w.title ("GCD GUI")
     w.geometry ("250x150")
+    i = PhotoImage (file="icon.png")
+    w.iconphoto  (False, i)
     w.resizable (0,0)
 
     #UI
