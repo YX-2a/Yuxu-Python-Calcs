@@ -1,9 +1,7 @@
 from tkinter import Tk, Label, Entry, Button, Frame
 from time import sleep
-from winsound import PlaySound
 
 def count ():
-	PlaySound ("./Beep.wav",0)
 	mini_num = int (ent.get ())
 	maxi_num = int (ent2.get ())
 	
@@ -13,7 +11,7 @@ def count ():
 		lb3.config (text = str(mini_num))
 		mini_num += 1
 	
-	for _ in range(3) :
+	for _ in range(15) :
 		w.update ()
 		sleep (0.5)
 		lb3.config (fg = "#ff0000")
@@ -21,8 +19,6 @@ def count ():
 		w.update ()
 		sleep (0.5)
 		lb3.config (fg = "#000000")
-		
-	PlaySound ("./Beep.wav",0)
 		
 def main ():
 	global ent, ent2, lb3, w
