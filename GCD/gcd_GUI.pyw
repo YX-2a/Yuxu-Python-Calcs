@@ -1,5 +1,6 @@
 #imports
-from tkinter import Tk, Entry, Label, Button, PhotoImage
+from tkinter import Tk, PhotoImage
+from tkinter.ttk import Entry, Label, Button
 from gcd import GCD
 
 #other funcs

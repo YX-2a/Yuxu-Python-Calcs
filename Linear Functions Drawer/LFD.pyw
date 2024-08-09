@@ -1,5 +1,6 @@
 #imports
-from tkinter import Tk, Canvas, Label, Entry, Button, PhotoImage
+from tkinter import Tk, Canvas, PhotoImage
+from tkinter.ttk import Label, Entry, Button
 from random import randrange
 
 #winconf

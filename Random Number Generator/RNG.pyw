@@ -1,5 +1,6 @@
 #imports
-from tkinter import Tk, Button, Label, Entry, PhotoImage
+from tkinter import Tk, PhotoImage
+from tkinter.ttk import Button, Label, Entry
 from random import randrange
 
 #window conf
@@ -21,7 +22,7 @@ def gorgy ():
 #interface
 lb1 = Label (w, text = "Select Range : ")
 lb2 = Label (w, text = ", ")
-lb3 = Label (w, text = "", fg = "#ff0000")
+lb3 = Label (w, text = "")
 
 ent1 = Entry (w, width = 10)
 ent2 = Entry (w, width = 10)

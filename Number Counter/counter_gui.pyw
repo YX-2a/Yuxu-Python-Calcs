@@ -1,4 +1,5 @@
-from tkinter import Tk, Label, Entry, Button, Frame, PhotoImage
+from tkinter import Tk, Label, Frame, PhotoImage
+from tkinter.ttk import Entry, Button
 from time import sleep
 
 def count ():

@@ -1,0 +1,5 @@
+# Anything To Do With "__pycache__"
+
+*.pyc
+*.pyo
+*.pyz
