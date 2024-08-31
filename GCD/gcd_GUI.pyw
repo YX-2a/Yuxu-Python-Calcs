@@ -30,11 +30,11 @@ def main ():
     btn = Button (w, text = "Submit", command = g_c_d)
 
     #placement
-    ent.pack ()
-    lb.pack ()
-    ent1.pack ()
-    btn.pack()
-    lb1.pack ()
+    ent.pack (pady = 1 )
+    lb.pack (pady = 1 )
+    ent1.pack (pady = 1 )
+    btn.pack(pady = 2 )
+    lb1.pack (pady = 2)
 
     w.mainloop ()
 

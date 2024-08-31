@@ -1,6 +1,6 @@
 #imports
 from tkinter import Tk, PhotoImage
-from tkinter.ttk import Button, Label, Entry
+from tkinter.ttk import Button, Label, Entry, Frame
 from random import randrange
 
 #window conf
@@ -20,21 +20,25 @@ def gorgy ():
     lb3.config (text = texinfo)
 
 #interface
-lb1 = Label (w, text = "Select Range : ")
-lb2 = Label (w, text = ", ")
+
+frm = Frame (w)
+
+lb1 = Label (frm, text = "Select Range : ")
+lb2 = Label (frm, text = ", ")
 lb3 = Label (w, text = "")
 
-ent1 = Entry (w, width = 10)
-ent2 = Entry (w, width = 10)
+ent1 = Entry (frm, width = 10)
+ent2 = Entry (frm, width = 10)
 
 btn = Button (w, text = "Apply", command = gorgy)
 
-lb1.place  (x = 50,y = 25)
-ent1.place(x = 135,y = 25)
-lb2.place  (x = 210,y = 25)
-ent2.place(x = 230,y = 25)
-btn.place  (x = 195 ,y = 60)
-lb3.place  (x = 195,y = 95)
+frm.pack (side = "top", pady = 20)
+lb1.pack  (side = "left", padx = 5)
+ent1.pack(side = "left", padx = 5)
+lb2.pack (side = "left", padx = 5)
+ent2.pack (side = "left", padx = 5)
+btn.pack  (side = "top")
+lb3.pack  (side = "top")
 
 #mainloop
 w.mainloop ()
